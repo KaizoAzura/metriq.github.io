@@ -48,13 +48,14 @@ body {
 @media screen and (min-width: 992px) {
   .navbar {
     background-color: var(--dark-color);
+    position: sticky;
     top: 0;
     bottom: auto;
     right: auto;
     left: 0;
     border-radius: 0;
     width: 100%;
-    border-bottom: 1px solid var(--light-color);
+    border-bottom: 1px solid var(--lightgray-color);
   }
   .navbar .navbar-brand img {
     width: 105px;
@@ -186,4 +187,34 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
+}
+header {
+  background-color: var(--dark-color);
+}
+header .head-mobile {
+  border-bottom: 1px solid var(--lightgray-color);
+}
+header .head-mobile .navbar-brand img {
+  width: 105px;
+}
+header .head-mobile .nav-link.notif {
+  background-color: var(--gray-dark);
+  border-radius: 50%;
+  padding: 16px;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  color: var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header {
+  font-size: 1rem;
+  color: var(--light-color);
+}
+header p {
+  color: var(--lightgray-color);
+  font-size: 0.8rem;
+  width: 90% !important;
 }/*# sourceMappingURL=main.css.map */
